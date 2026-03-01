@@ -7,105 +7,81 @@
     <meta name="author" content="CybriaTech">
     <meta name="keywords" content="games, unblocked games, unblocked games, video games, unity, webgl, swf, html5, cybriagames, cybriagames sequel, emulators">
     <link rel="stylesheet" href="/css/header.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link rel="icon" href="/images/logo/favi/logo-16x16.png" sizes="16x16">
     <link rel="icon" href="/images/logo/favi/logo-32x32.png" sizes="32x32">
     <link rel="apple-touch-icon" href="/images/logo/favi/apple-touch-icon.png" sizes="180x180">
     <title>Opium</title>
     <link rel="stylesheet" href="/css/index.css">
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-20CSCVKLF3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-20CSCVKLF3');
-    </script>
-    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20CSCVKLF3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-20CSCVKLF3');
+</script>
     <style>
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: transparent;
-            z-index: -2;
-        }
+    #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -2;
+}
 
-        main {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 95%;
-            max-width: 1200px;
-            /* Prevents clipping on shorter screens */
-            max-height: 95vh;
-            overflow-y: auto;
-            scrollbar-width: none; /* Firefox */
-        }
-        main::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-        #logo-title {
-            position: fixed;
-            top: 14px; 
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            max-width: 300px; 
-            width: 20%; 
-            height: auto;
+#logo-title {
+        position: fixed;
+        top: 14px; 
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        max-width: 300px; 
+        width: 20%; 
+        height: auto;
+        opacity: 0;
+        animation: fadeIn 1.5s ease forwards, stretchAnimation 3s ease-in-out infinite;
+    }
+
+    @keyframes fadeIn {
+        0% {
             opacity: 0;
-            animation: fadeIn 1.5s ease forwards, stretchAnimation 3s ease-in-out infinite;
         }
+        100% {
+            opacity: 1;
+        }
+    }
 
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes stretchAnimation {
-            0%, 100% { transform: translateX(-50%) scaleY(1) scaleX(1); }
-            50% { transform: translateX(-50%) scaleY(1.1) scaleX(1.1); }
+    @keyframes stretchAnimation {
+        0%, 100% {
+            transform: translateX(-50%) scaleY(1) scaleX(1);
         }
-
-        /* --- SCOOLBASE INTEGRATED STYLES --- */
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500;600&display=swap');
-
-        #scoolbase-isolated-wrapper {
-            all: initial;
-            display: block;
-            width: 100%;
-            margin-top: 30px;
+        50% {
+            transform: translateX(-50%) scaleY(1.1) scaleX(1.1);
         }
-        
-        #scoolbase-isolated-wrapper * { box-sizing: border-box; }
-
-        @keyframes scoolbaseFadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @media (min-width: 769px) {
-            #scoolbase-isolated-wrapper .scoolbase-inner-box:hover {
-                transform: translate(-3px, -3px) !important;
-                box-shadow: 10px 10px 0 #2d1b52 !important;
-            }
-            #scoolbase-isolated-wrapper a:hover {
-                background: #9b76e0 !important;
-                transform: translate(-2px, -2px) !important;
-                box-shadow: 6px 6px 0 #2d1b52 !important;
-            }
-        }
-    </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4874616183592939" crossorigin="anonymous"></script>
+    }
+</style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4874616183592939"
+     crossorigin="anonymous"></script>
 </head>
 <body>
     <script src="/js/header.js"></script>
-    
     <main>
         <h1 class="title-index">Opium</h1>
-        <h3 class="desc"></h3>
+        <h3 class="desc"><!-- No words, just splash --></h3>
 
-        <div class="buttons-container">
+       <div class="buttons-container">
             <div class="button-row">
                 <button class="play-btn" onclick="window.location.href='games.html';">Games</button>
                 <button class="play-btn" onclick="window.location.href='/proxies';">Proxies</button>
@@ -116,91 +92,214 @@
                 <button class="play-btn" onclick="window.location.href='https://github.com/CybriaTech/Opium';">Our Github Repo</button>
                 <button class="play-btn" onclick="window.location.href='https://bit.ly/cybriatech';">Join Our Discord</button>
             </div>
-        </div>
-
+       </div>
         <div id="scoolbase-isolated-wrapper">
-            <div class="scoolbase-banner" style="width: 100%; display: flex; justify-content: center; animation: scoolbaseFadeInUp 1s ease forwards;">
-                <div class="scoolbase-inner-box" style="background: #0e0e12; border: 2px solid #7b52c8; padding: 22px 24px; max-width: 820px; width: 95%; text-align: center; box-shadow: 7px 7px 0 #1c1a28; transition: transform 0.2s ease, box-shadow 0.2s ease; box-sizing: border-box;">
-                    
-                    <span style="display: inline-block; background: #1c1a28; color: #9b76e0; font-size: 0.75rem; font-weight: 600; padding: 5px 14px; border: 1px solid #2a2640; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 2px; font-family: 'DM Mono', monospace; line-height: normal;">
-                        FROM THE CREATORS OF ARNAMENT & ORNAMENT GAMES
-                    </span>
-                    
-                    <h2 style="font-family: 'Bebas Neue', 'Impact', sans-serif; font-size: 2.6rem; font-weight: 800; margin: 6px 0; color: #f0eeff; letter-spacing: 2.5px; line-height: 1; text-transform: none;">
-                        Scool<span style="color: #7b52c8; font-size: inherit; font-family: inherit; font-weight: inherit; padding: 0; margin: 0; border: none; background: transparent;">Base</span>
-                    </h2>
-                    
-                    <p style="font-family: 'DM Mono', monospace; font-size: 0.95rem; color: #7a7690; margin-bottom: 16px; border-bottom: 1px solid #2a2640; padding-bottom: 14px; max-width: 600px; margin-left: auto; margin-right: auto; letter-spacing: 0.5px; line-height: 1.4;">
-                        A State-of-the-art VPN, Game Library, and Teacher Monitor Disabler
-                    </p>
-                    
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 15px 0 20px; box-sizing: border-box;">
-                        <span style="display: inline-block; background: #0a0a0e; padding: 6px 12px; border: 1px solid #2a2640; font-size: 0.8rem; color: #b99ef0; font-family: 'DM Mono', monospace; letter-spacing: 0.5px; line-height: normal;">
-                            ▸ MILITARY-GRADE VPN
-                        </span>
-                        <span style="display: inline-block; background: #0a0a0e; padding: 6px 12px; border: 1px solid #2a2640; font-size: 0.8rem; color: #b99ef0; font-family: 'DM Mono', monospace; letter-spacing: 0.5px; line-height: normal;">
-                            ▸ 100+ STEAM GAMES
-                        </span>
-                        <span style="display: inline-block; background: #0a0a0e; padding: 6px 12px; border: 1px solid #2a2640; font-size: 0.8rem; color: #b99ef0; font-family: 'DM Mono', monospace; letter-spacing: 0.5px; max-width: 100%; line-height: normal;">
-                            ▸ HOLLOW KNIGHT • SILKSONG • BALATRO • GEOMETRY DASH • CULT OF THE LAMB
-                        </span>
-                        <span style="display: inline-block; background: #0a0a0e; padding: 6px 12px; border: 1px solid #2a2640; font-size: 0.8rem; color: #b99ef0; font-family: 'DM Mono', monospace; letter-spacing: 0.5px; line-height: normal;">
-                            ▸ DISABLE TEACHER MONITORING APPS
-                        </span>
-                    </div>
-                    
-                    <a href="https://scoolbase.share.zrok.io" target="_blank" style="display: inline-block; background: #7b52c8; color: white; font-size: 1rem; font-weight: 600; padding: 12px 34px; border: 1px solid #5e3aab; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; transition: all 0.2s ease; box-shadow: 4px 4px 0 #2d1b52; font-family: 'DM Mono', monospace; line-height: normal;">
-                        ACCESS NOW →
-                    </a>
-                </div>
+    <div class="scoolbase-banner" style="margin-top: 40px; width: 100%; display: flex; justify-content: center; animation: scoolbaseFadeInUp 1s ease forwards;">
+        <div class="scoolbase-inner-box" style="background: #0e0e12; border: 2px solid #7b52c8; padding: 28px 30px; max-width: 900px; width: 90%; text-align: center; box-shadow: 8px 8px 0 #1c1a28; transition: transform 0.2s ease, box-shadow 0.2s ease; box-sizing: border-box;">
+            
+            <span style="display: inline-block; background: #1c1a28; color: #9b76e0; font-size: 0.85rem; font-weight: 600; padding: 6px 16px; border: 1px solid #2a2640; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 2px; font-family: 'DM Mono', monospace; line-height: normal;">
+                FROM THE CREATORS OF ARNAMENT & ORNAMENT GAMES
+            </span>
+            
+            <h2 style="font-family: 'Bebas Neue', 'Impact', sans-serif; font-size: 3.2rem; font-weight: 800; margin: 8px 0; color: #f0eeff; letter-spacing: 3px; line-height: 1; text-transform: none;">
+                Scool<span style="color: #7b52c8; font-size: inherit; font-family: inherit; font-weight: inherit; padding: 0; margin: 0; border: none; background: transparent;">Base</span>
+            </h2>
+            
+            <p style="font-family: 'DM Mono', monospace; font-size: 1.1rem; color: #7a7690; margin-bottom: 20px; border-bottom: 1px solid #2a2640; padding-bottom: 18px; max-width: 700px; margin-left: auto; margin-right: auto; letter-spacing: 0.5px; line-height: 1.5;">
+                A State-of-the-art VPN, Game Library, and Teacher Monitor Disabler
+            </p>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 20px 0 25px; box-sizing: border-box;">
+                
+                <span style="display: inline-block; background: #0a0a0e; padding: 8px 16px; border: 1px solid #2a2640; font-size: 0.95rem; color: #b99ef0; font-family: 'DM Mono', monospace; letter-spacing: 0.5px; line-height: normal;">
+                    ▸ MILITARY-GRADE VPN
+                </span>
+                
+                <span style="display: inline-block; background: #0a0a0e; padding: 8px 16px; border: 1px solid #2a2640; font-size: 0.95rem; color: #b99ef0; font-family: 'DM Mono', monospace; letter-spacing: 0.5px; line-height: normal;">
+                    ▸ 100+ STEAM GAMES
+                </span>
+                
+                <span style="display: inline-block; background: #0a0a0e; padding: 8px 16px; border: 1px solid #2a2640; font-size: 0.95rem; color: #b99ef0; font-family: 'DM Mono', monospace; letter-spacing: 0.5px; max-width: 100%; line-height: normal;">
+                    ▸ HOLLOW KNIGHT • SILKSONG • BALATRO • GEOMETRY DASH • CULT OF THE LAMB • MANY MORE
+                </span>
+                
+                <span style="display: inline-block; background: #0a0a0e; padding: 8px 16px; border: 1px solid #2a2640; font-size: 0.95rem; color: #b99ef0; font-family: 'DM Mono', monospace; letter-spacing: 0.5px; line-height: normal;">
+                    ▸ DISABLE TEACHER MONITORING APPS
+                </span>
             </div>
+            
+            <a href="https://scoolbase.share.zrok.io" target="_blank" style="display: inline-block; background: #7b52c8; color: white; font-size: 1.2rem; font-weight: 600; padding: 14px 40px; border: 1px solid #5e3aab; text-decoration: none; text-transform: uppercase; letter-spacing: 2.5px; transition: all 0.2s ease; box-shadow: 5px 5px 0 #2d1b52; margin-top: 8px; font-family: 'DM Mono', monospace; line-height: normal;">
+                ACCESS NOW →
+            </a>
         </div>
-    </main>
+    </div>
 
-    <div id="particles-js"></div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        window.onload = function() {
-            adjustLogoSize();
-            window.addEventListener('resize', adjustLogoSize);
-        };
+    <style>
+        /* Import necessary fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500;600&display=swap');
 
-        function adjustLogoSize() {
-            var logo = document.getElementById('logo-title');
-            var logoWidthPercentage = 20;
-            var maxWidth = 300; 
-            var logoWidth = window.innerWidth * (logoWidthPercentage / 100);
-            if (logoWidth > maxWidth) logoWidth = maxWidth;
-            if (logo) logo.style.width = logoWidth + 'px';
+        /* CSS Reset specific to our wrapper to prevent host site bleed */
+        #scoolbase-isolated-wrapper {
+            all: initial;
+            display: block;
+            width: 100%;
+        }
+        
+        #scoolbase-isolated-wrapper * {
+            box-sizing: border-box;
         }
 
-        $(document).ready(function () {
-            var splash = ["Hi there Beau Butler!"];
-            var currentIndex = 0;
-            function updateSplash() {
-                $(".desc").text(splash[currentIndex]);
-                currentIndex = (currentIndex + 1) % splash.length;
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            #scoolbase-isolated-wrapper .scoolbase-inner-box {
+                padding: 22px 20px !important;
             }
-            updateSplash();
+            #scoolbase-isolated-wrapper h2 {
+                font-size: 2.6rem !important;
+            }
+            #scoolbase-isolated-wrapper p {
+                font-size: 0.95rem !important;
+                padding-bottom: 16px !important;
+            }
+            #scoolbase-isolated-wrapper span {
+                font-size: 0.85rem !important;
+                padding: 6px 12px !important;
+            }
+            #scoolbase-isolated-wrapper a {
+                font-size: 1rem !important;
+                padding: 12px 30px !important;
+            }
+        }
+        
+        /* Small phones */
+        @media (max-width: 480px) {
+            #scoolbase-isolated-wrapper .scoolbase-inner-box {
+                padding: 18px 15px !important;
+            }
+            #scoolbase-isolated-wrapper h2 {
+                font-size: 2.2rem !important;
+                letter-spacing: 2px !important;
+            }
+            #scoolbase-isolated-wrapper p {
+                font-size: 0.85rem !important;
+                margin-bottom: 16px !important;
+            }
+            #scoolbase-isolated-wrapper span {
+                font-size: 0.75rem !important;
+                padding: 5px 10px !important;
+                gap: 4px !important;
+            }
+            #scoolbase-isolated-wrapper a {
+                font-size: 0.9rem !important;
+                padding: 10px 24px !important;
+                box-shadow: 4px 4px 0 #2d1b52 !important;
+            }
+        }
+        
+        @keyframes scoolbaseFadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Hover effects (desktop only) */
+        @media (min-width: 769px) {
+            #scoolbase-isolated-wrapper .scoolbase-inner-box:hover {
+                transform: translate(-3px, -3px) !important;
+                box-shadow: 11px 11px 0 #2d1b52 !important;
+            }
+            
+            #scoolbase-isolated-wrapper a:hover {
+                background: #9b76e0 !important;
+                transform: translate(-2px, -2px) !important;
+                box-shadow: 7px 7px 0 #2d1b52 !important;
+            }
+        }
+    </style>
+</div>
+    </main>
+    <div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  window.onload = function() {
+      adjustLogoSize();
+      window.addEventListener('resize', adjustLogoSize);
+  };
+
+  function adjustLogoSize() {
+      var logo = document.getElementById('logo-title');
+      var logoWidthPercentage = 20;
+      var maxWidth = 300; 
+
+      var logoWidth = window.innerWidth * (logoWidthPercentage / 100);
+      if (logoWidth > maxWidth) {
+          logoWidth = maxWidth;
+      }
+
+      logo.style.width = logoWidth + 'px';
+  }
+  </script>
+<script>
+    $(document).ready(function () {
+        var splash = ["Hi there Beau Butler!"];
+
+        function randomize(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+
+        randomize(splash);
+
+        var currentIndex = 0;
+
+        function updateSplash() {
+            var newSplash = splash[currentIndex];
+            $(".desc").text(newSplash);
+
+            currentIndex = (currentIndex + 1) % splash.length;
+        }
+
+        updateSplash();
+
+        $(window).on('beforeunload', function () {
+            sessionStorage.setItem('splashIndex', currentIndex);
         });
 
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: '#ffffff' },
-                shape: { type: 'circle' },
-                opacity: { value: 0.5 },
-                size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
-                move: { enable: true, speed: 6, direction: 'none', random: false, out_mode: 'out' }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
-                modes: { repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 } }
-            },
-            retina_detect: true
-        });
-    </script>
+        var savedIndex = sessionStorage.getItem('splashIndex');
+        if (savedIndex !== null) {
+            currentIndex = parseInt(savedIndex);
+        }
+
+        updateSplash();
+    });
+</script>
+<script>
+   particlesJS('particles-js', {
+     particles: {
+       number: { value: 80, density: { enable: true, value_area: 800 } },
+       color: { value: '#ffffff' },
+       shape: { type: 'circle', stroke: { width: 0, color: '#000000' }, polygon: { nb_sides: 5 }, image: { src: 'img/github.svg', width: 100, height: 100 } },
+       opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+       size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+       line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
+       move: { enable: true, speed: 6, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
+     },
+     interactivity: {
+       detect_on: 'canvas',
+       events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+       modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
+     },
+     retina_detect: true
+   });
+</script>
 </body>
 </html>
