@@ -24,7 +24,7 @@
 
   gtag('config', 'G-20CSCVKLF3');
 </script>
-<style>
+    <style>
     #particles-js {
   position: absolute;
   width: 100%;
@@ -35,10 +35,13 @@
 
 main {
   position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 20px 40px; /* Add top padding to avoid logo overlap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  margin-top: 80px;
+  padding: 20px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -73,24 +76,6 @@ main {
             transform: translateX(-50%) scaleY(1.1) scaleX(1.1);
         }
     }
-
-    /* Responsive adjustments for main content */
-    @media (max-width: 768px) {
-        main {
-            padding-top: 100px; /* Increase top padding on smaller screens */
-        }
-    }
-
-    @media (max-width: 480px) {
-        main {
-            padding-top: 120px; /* Even more padding for very small screens */
-        }
-        
-        #logo-title {
-            width: 30%; /* Make logo larger on small screens */
-            max-width: 200px;
-        }
-    }
 </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4874616183592939"
      crossorigin="anonymous"></script>
@@ -112,15 +97,10 @@ main {
                 <button class="play-btn" onclick="window.location.href='https://github.com/CybriaTech/Opium';">Our Github Repo</button>
                 <button class="play-btn" onclick="window.location.href='https://bit.ly/cybriatech';">Join Our Discord</button>
             </div>
-          <!-- 
-  ScoolBase Advertisement Card
-  Copy everything below to embed on any website.
-  Self-contained with CSS isolation.
--->
-
+       </div>
 <div id="scoolbase-ad-wrapper">
     <div class="scoolbase-ad-banner" style="margin-top: 40px; width: 100%; display: flex; justify-content: center; animation: scoolbaseAdFadeIn 1s ease forwards;">
-        <div class="scoolbase-ad-box" style="background: #0e0e12; border: 2px solid #7b52c8; padding: 28px 30px; max-width: 950px; width: 100%; box-shadow: 8px 8px 0 #1c1a28; transition: transform 0.2s ease, box-shadow 0.2s ease; box-sizing: border-box;">
+        <div class="scoolbase-ad-box" style="background: #0e0e12; border: 2px solid #7b52c8; padding: 28px 30px; max-width: 900px; width: 90%; box-shadow: 8px 8px 0 #1c1a28; transition: transform 0.2s ease, box-shadow 0.2s ease; box-sizing: border-box;">
             
             <!-- Header Section -->
             <div style="text-align: center; margin-bottom: 20px;">
@@ -352,8 +332,6 @@ main {
         @media (max-width: 768px) {
             #scoolbase-ad-wrapper .scoolbase-ad-box {
                 padding: 22px 20px !important;
-                width: 100% !important; /* Ensure full width on mobile */
-                max-width: none !important; /* Remove max-width restriction */
             }
             
             #scoolbase-ad-wrapper h2 {
@@ -380,8 +358,7 @@ main {
         @media (max-width: 480px) {
             #scoolbase-ad-wrapper .scoolbase-ad-box {
                 padding: 18px 15px !important;
-                width: 100% !important; /* Ensure full width on small phones */
-                max-width: none !important; /* Remove max-width restriction */
+                width: 95% !important;
             }
             
             #scoolbase-ad-wrapper h2 {
@@ -416,17 +393,6 @@ main {
                 width: 22px !important;
                 height: 22px !important;
             }
-        }
-        
-        /* Ensure ad banner doesn't get squashed */
-        #scoolbase-ad-wrapper .scoolbase-ad-box {
-            min-width: auto !important; /* Remove min-width restriction */
-            width: 100% !important; /* Ensure it takes full available width */
-            max-width: 950px !important; /* Keep max width for desktop */
-        }
-        
-        #scoolbase-ad-wrapper .scoolbase-ad-banner {
-            padding: 0 10px !important; /* Add horizontal padding to prevent edge cutoff */
         }
     </style>
 </div>
@@ -600,9 +566,6 @@ main {
     });
 })();
 </script>
-
-
-       </div>
     </main>
     <div id="particles-js"></div>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
