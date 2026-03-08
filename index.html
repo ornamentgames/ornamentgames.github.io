@@ -26,34 +26,21 @@
 </script>
     <style>
     #particles-js {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: transparent;
   z-index: -2;
-  top: 0;
-  left: 0;
 }
 
-/* FIX 2: main no longer uses absolute centering that clips under the header */
 main {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 80px 20px 40px;
   text-align: center;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 600px) {
-  main {
-    padding-top: 70px;
-    justify-content: flex-start;
-  }
 }
 
 #logo-title {
@@ -86,6 +73,12 @@ main {
             transform: translateX(-50%) scaleY(1.1) scaleX(1.1);
         }
     }
+
+    @media (max-width: 600px) {
+        main {
+            padding-top: 100px;
+        }
+    }
 </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4874616183592939"
      crossorigin="anonymous"></script>
@@ -115,7 +108,7 @@ main {
 
 <div id="scoolbase-ad-wrapper">
     <div class="scoolbase-ad-banner" style="margin-top: 40px; width: 100%; display: flex; justify-content: center; animation: scoolbaseAdFadeIn 1s ease forwards;">
-        <div class="scoolbase-ad-box" style="background: #0e0e12; border: 2px solid #7b52c8; padding: 28px 30px; max-width: 950px; width: 90%; box-shadow: 8px 8px 0 #1c1a28; transition: transform 0.2s ease, box-shadow 0.2s ease; box-sizing: border-box;">
+        <div class="scoolbase-ad-box" style="background: #0e0e12; border: 2px solid #7b52c8; padding: 28px 30px; max-width: 950px; width: 100%; box-shadow: 8px 8px 0 #1c1a28; transition: transform 0.2s ease, box-shadow 0.2s ease; box-sizing: border-box;">
             
             <!-- Header Section -->
             <div style="text-align: center; margin-bottom: 20px;">
@@ -233,12 +226,11 @@ main {
         /* Import fonts */
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500;600&display=swap');
 
-        /* FIX 1: added box-sizing so width: 100% is respected after all: initial */
+        /* CSS Reset for isolation */
         #scoolbase-ad-wrapper {
             all: initial;
             display: block;
             width: 100%;
-            box-sizing: border-box;
             font-family: 'DM Mono', monospace;
         }
         
@@ -582,6 +574,8 @@ main {
     });
 })();
 </script>
+
+
        </div>
     </main>
     <div id="particles-js"></div>
