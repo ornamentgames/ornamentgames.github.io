@@ -59,13 +59,7 @@ body {
     transform: scale(1.05);
 }
 
-main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+/* main styles are now in index.html inline styles */
 
 /* hide controls for easter egg videos */
 video.hidden-controls::-webkit-media-controls {
