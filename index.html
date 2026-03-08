@@ -26,30 +26,34 @@
 </script>
     <style>
     #particles-js {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-color: transparent;
   z-index: -2;
+  top: 0;
+  left: 0;
 }
 
+/* FIX 2: main no longer uses absolute centering that clips under the header */
 main {
   position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px 40px;
+  text-align: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  width: 100%;
-  padding-top: 100px; /* Gives padding clearance from the top header */
-  padding-bottom: 40px;
-  box-sizing: border-box;
-  text-align: center;
+  justify-content: center;
 }
 
-/* Dynamically centers content vertically, falls back gracefully to scrolling if it overflows */
-main::before, main::after {
-  content: "";
-  flex: 1;
+@media (max-width: 600px) {
+  main {
+    padding-top: 70px;
+    justify-content: flex-start;
+  }
 }
 
 #logo-title {
@@ -103,8 +107,6 @@ main::before, main::after {
                 <button class="play-btn" onclick="window.location.href='https://github.com/CybriaTech/Opium';">Our Github Repo</button>
                 <button class="play-btn" onclick="window.location.href='https://bit.ly/cybriatech';">Join Our Discord</button>
             </div>
-       </div> <!-- CLosed buttons-container here so the ad wrapper has full space underneath -->
-
           <!-- 
   ScoolBase Advertisement Card
   Copy everything below to embed on any website.
@@ -231,11 +233,12 @@ main::before, main::after {
         /* Import fonts */
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500;600&display=swap');
 
-        /* CSS Reset for isolation */
+        /* FIX 1: added box-sizing so width: 100% is respected after all: initial */
         #scoolbase-ad-wrapper {
             all: initial;
             display: block;
             width: 100%;
+            box-sizing: border-box;
             font-family: 'DM Mono', monospace;
         }
         
@@ -579,6 +582,7 @@ main::before, main::after {
     });
 })();
 </script>
+       </div>
     </main>
     <div id="particles-js"></div>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
