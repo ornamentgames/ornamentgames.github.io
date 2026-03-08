@@ -24,7 +24,7 @@
 
   gtag('config', 'G-20CSCVKLF3');
 </script>
-    <style>
+<style>
     #particles-js {
   position: absolute;
   width: 100%;
@@ -36,9 +36,9 @@
 main {
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 20px 40px;
+  padding: 80px 20px 40px; /* Add top padding to avoid logo overlap */
   text-align: center;
   box-sizing: border-box;
 }
@@ -74,9 +74,21 @@ main {
         }
     }
 
-    @media (max-width: 600px) {
+    /* Responsive adjustments for main content */
+    @media (max-width: 768px) {
         main {
-            padding-top: 100px;
+            padding-top: 100px; /* Increase top padding on smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        main {
+            padding-top: 120px; /* Even more padding for very small screens */
+        }
+        
+        #logo-title {
+            width: 30%; /* Make logo larger on small screens */
+            max-width: 200px;
         }
     }
 </style>
@@ -340,6 +352,8 @@ main {
         @media (max-width: 768px) {
             #scoolbase-ad-wrapper .scoolbase-ad-box {
                 padding: 22px 20px !important;
+                width: 100% !important; /* Ensure full width on mobile */
+                max-width: none !important; /* Remove max-width restriction */
             }
             
             #scoolbase-ad-wrapper h2 {
@@ -366,7 +380,8 @@ main {
         @media (max-width: 480px) {
             #scoolbase-ad-wrapper .scoolbase-ad-box {
                 padding: 18px 15px !important;
-                width: 95% !important;
+                width: 100% !important; /* Ensure full width on small phones */
+                max-width: none !important; /* Remove max-width restriction */
             }
             
             #scoolbase-ad-wrapper h2 {
@@ -401,6 +416,17 @@ main {
                 width: 22px !important;
                 height: 22px !important;
             }
+        }
+        
+        /* Ensure ad banner doesn't get squashed */
+        #scoolbase-ad-wrapper .scoolbase-ad-box {
+            min-width: auto !important; /* Remove min-width restriction */
+            width: 100% !important; /* Ensure it takes full available width */
+            max-width: 950px !important; /* Keep max width for desktop */
+        }
+        
+        #scoolbase-ad-wrapper .scoolbase-ad-banner {
+            padding: 0 10px !important; /* Add horizontal padding to prevent edge cutoff */
         }
     </style>
 </div>
